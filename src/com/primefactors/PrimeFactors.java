@@ -9,7 +9,7 @@ public class PrimeFactors {
 		ArrayList<Integer> factors = new java.util.ArrayList<Integer>();
 		if (i > 1) 
 		{
-			factors.add(2);
+			factors.add(i);
 		}
 		return factors;
 	}

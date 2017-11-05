@@ -2,21 +2,24 @@ package com.primefactors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.Arrays;
-import java.util.Collections;
-
+import static java.util.Arrays.asList;
 import org.junit.jupiter.api.Test;
 
 public class PrimFactorsTest {
 	
 	@Test
 	public void oneHasNoPrimeFactors() {
-		assertEquals(Collections.emptyList(), PrimeFactors.computeFactorsFor(1));
+		assertEquals(asList(), PrimeFactors.computeFactorsFor(1));
 	}
 	
 	@Test
 	public void twoIsItsOwnPrimeFactor() {
-		assertEquals(Arrays.asList(2), PrimeFactors.computeFactorsFor(2));
+		assertEquals(asList(2), PrimeFactors.computeFactorsFor(2));
+	}
+	
+	@Test
+	public void threeIsItsOwnPrimeFactor() {
+		assertEquals(asList(3), PrimeFactors.computeFactorsFor(3));
 	}
 	
 }
