@@ -22,4 +22,9 @@ public class PrimFactorsTest {
 		assertEquals(asList(3), PrimeFactors.computeFactorsFor(3));
 	}
 	
+	@Test
+	public void fourHasTwoPrimeFactors() {
+		assertEquals(asList(2,2), PrimeFactors.computeFactorsFor(4));
+	}
+	
 }
