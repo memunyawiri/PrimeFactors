@@ -51,4 +51,9 @@ public class PrimFactorsTest {
 	public void nineHasThreeTimesTwoAsPrimeFactors() {
 		assertEquals(asList(3, 3), PrimeFactors.computeFactorsFor(9));
 	}
+	
+	@Test
+	public void tenHasTwoTimesfiveAsPrimeFactors() {
+		assertEquals(asList(2, 5), PrimeFactors.computeFactorsFor(10));
+	}
 }
