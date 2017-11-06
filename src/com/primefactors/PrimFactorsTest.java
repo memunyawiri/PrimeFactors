@@ -27,4 +27,8 @@ public class PrimFactorsTest {
 		assertEquals(asList(2,2), PrimeFactors.computeFactorsFor(4));
 	}
 	
+	@Test
+	public void fiveIsItsOwnPrimeFactor() {
+		assertEquals(asList(5), PrimeFactors.computeFactorsFor(5));
+	}
 }
